@@ -285,7 +285,7 @@ You'll often want to link between pages — Let's look at routing in a Gatsby si
 
 ### ✋ Using the `<Link />` component
 
-1.  Open the index page component (`src/pages/index.js`), import the `<Link />` component from Gatsby, add a `<Link />` component above the header, and give it a `to` property with the value of `"/contact/"` for the pathname:
+1.  Open the index page component (`src/pages/index.js`), import the `<Link />` component from Gatsby, add a `<Link />` component above the header, and give it a `to` property with the value of `"/contact"` for the pathname:
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -294,7 +294,7 @@ import Header from "../components/header"
 
 export default () => (
   <div style={{ color: `purple` }}>
-    <Link to="/contact/">Contact</Link> {/* highlight-line */}
+    <Link to="/contact">Contact</Link> {/* highlight-line */}
     <Header headerText="Hello Gatsby!" />
     <p>What a world.</p>
     <img src="https://source.unsplash.com/random/400x200" alt="" />
